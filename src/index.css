@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+#root {
+  background-color: #e5e5e5;
+  min-height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30%;
+  background-color: #fafafa;
+  padding: 70px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.large-input,
+button {
+  width: 70%;
+  padding: 7px;
+  margin: 10px 0;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+button {
+  background: #003be5;
+  color: white;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+.user img {
+  height: 47px;
+  padding-left: 20px;
+  background-color: #e5e5e5;
+  padding: 3px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#icon-user {
+  height: 20px;
+  padding-left: 0;
+  margin:0 5px 0 0;
+  background-color: #fafafa;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: #023031;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.user p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px 10px;
+  background: #fafafa;
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 15px 0; */
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background: #036b52;
+  width: 100%;
+  border-right: 1px solid white;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+nav a:hover {
+  color: #036b52;
+  background: #e5e5e5;
+  border: 1px solid black;
+}
+
+.search {
+  width: 100%;
+  padding: 5% 20%;
+}
+
+.search input {
+  margin-right: 15px;
+}
+
+.search button {
+  width: 20%;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+h2 {
+  font-style: italic;
+  color: grey;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section a {
+  width: 110px;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 5px 0;
+}
+
+section a:hover {
+  transform: scale(1.1);
+}
+
+section p {
+  max-width: 25ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.album-check {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 40px 0;
+}
+
+.album-check img {
+  width: 320px;
+}
+
+.musics-album {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+  max-height: 450px;
+  width: 400px;
+  overflow: overlay;
+}
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.label-color {
+  color: grey;
+}
+
+label input {
+  width: 20px;
+  margin: 10px;
+}
+
+.favorite-main {
+  margin: 50px 300px;
+}
+
+.form_perfil {
+  height: 50vh;
+  margin: 5vh 30%;
+}
+
+.label_perfil {
+  font-size: 20px;
+  font-weight: 600;
+  color: #023031 ;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px ;
+}
+
+.label_perfil input, textarea {
+  width: 100%;
+  margin: 20px 0;
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid rgb(116, 115, 115);
+}
+
+.label_perfil textarea:focus, input:focus {
+  background-color: #e5e5e5;
+}
+
+.p_perfil {
+  font-size: 17px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.icon_perfil {
+  width: 60px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#mostrar {
+  display: none;
+}
+#hover_img:hover #mostrar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+  color: #036b52;
+}
+
+.button_profile {
+  border-radius: 5px;
+  width: 8vw;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.button_profile:hover {
+  background-color: #305bdf;
+}
+
