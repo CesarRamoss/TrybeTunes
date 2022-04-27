@@ -168,12 +168,14 @@ section p {
 .album-check {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 25px;
   margin: 40px 0;
 }
 
 .album-check img {
   width: 320px;
+  border-radius: 10px;
 }
 
 .musics-album {
@@ -181,27 +183,82 @@ section p {
   flex-direction: column;
   margin: 0 80px;
   max-height: 450px;
-  width: 400px;
+  width: 550px;
   overflow: overlay;
 }
 
 .music-list {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin: 10px 0;
 }
 
-.label-color {
-  color: grey;
+.music_p {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: normal; */
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-label input {
+/* .label-color {
+  color: grey;
+  margin-left: 20px;
+} */
+
+/* label input {
   width: 20px;
   margin: 10px;
+} */
+
+input[type = checkbox] {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-appearance:none;
+  background-color:transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  /* z-index: 1; */
+  margin-left: 19px;
+  margin-top: 16px;
+}
+
+input + label::after {
+  position: relative;
+  top: -27px;
+  margin-left: 23px;
+  content: "🤍";
+  /* cursor: pointer; */
+ 
+}
+
+input:checked + label::after {
+  content: "❤️";
+  
+}
+
+.main_favorito{
+  display: flex;
+  margin-top: 20px;
+}
+
+.main_favorito img{
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 .favorite-main {
-  margin: 50px 300px;
+  /* margin: 50px 300px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-height: 80vh;
+  width: 650px;
+  overflow: overlay;
 }
 
 .form_perfil {

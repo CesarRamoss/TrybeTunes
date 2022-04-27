@@ -42,7 +42,9 @@ class Favorites extends React.Component {
       <>
         <Header />
         <div data-testid="page-favorites" className="favorite-main">
-          { !displayLoading && favoriteMusics.map((music) => (
+          { !displayLoading && favoriteMusics.map((music,index) => (
+            <div className='main_favorito'>
+            <img src={ favoriteMusics[index].artworkUrl100 } alt='nome do album' />
             <MusicCard
               key={ music.trackName }
               musicName={ music.trackName }
@@ -51,6 +53,7 @@ class Favorites extends React.Component {
               album={ music }
               removeFav={ this.removeMusic }
             />
+            </div>
           )) }
         </div>
       </>

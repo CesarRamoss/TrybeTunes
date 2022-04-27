@@ -50,24 +50,30 @@ class MusicCard extends React.Component {
     return (
       <>
         <div className="music-list">
-          <p>{ musicName }</p>
+          <p className='music_p'>{ musicName }</p>
           <audio data-testid="audio-component" src={ preview } controls>
             <track kind="captions" />
             O seu navegador não suporta o elemento
             <code>audio</code>
           </audio>
-        </div>
-        <div>
-          <label htmlFor="favorite" className="label-color">
+
+          {/* <p htmlFor="favorite" className="label-color">
             Favorita
+            </p> */}
+          <div class="container">
             <input
               checked={ favoriteChecked }
               type="checkbox"
-              data-testid={ `checkbox-music-${trackId}` }
+              data-testid={ `checkbox-music-${ trackId }` }
               onChange={ this.addFavoriteSong }
+              // id='checkbox'
             />
-          </label>
+            <label for="checkbox" ></label>
+          </div>
+
+
         </div>
+        <hr />
         { displayLoading && <Loading /> }
       </>
     );
