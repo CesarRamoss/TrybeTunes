@@ -3,7 +3,7 @@
 
 Este projeto foi desenvolvido individualmente colocando em prática o conceito de Classes em React 🚀
 
-O app é um player de músicas, assim como o itunes, e utiliza como base a API [Itunes_API]e pode ser utilizado no link: [TrybeTunes](https://trybe-tunes.netlify.app/)
+O app é um player de músicas, assim como o itunes, e utiliza como base a API _Itunes_API_ e pode ser utilizado no link: [TrybeTunes](https://trybe-tunes.netlify.app/)
 
 ---
 
