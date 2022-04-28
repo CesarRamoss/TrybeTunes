@@ -55,11 +55,7 @@ class MusicCard extends React.Component {
             <track kind="captions" />
             O seu navegador não suporta o elemento
             <code>audio</code>
-          </audio>
-
-          {/* <p htmlFor="favorite" className="label-color">
-            Favorita
-            </p> */}
+          </audio>          
           <div class="container">
             <input
               checked={ favoriteChecked }
@@ -70,8 +66,6 @@ class MusicCard extends React.Component {
             />
             <label for="checkbox" ></label>
           </div>
-
-
         </div>
         <hr />
         { displayLoading && <Loading /> }

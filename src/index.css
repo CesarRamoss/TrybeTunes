@@ -170,7 +170,7 @@ section p {
   justify-content: center;
   flex-wrap: wrap;
   padding: 25px;
-  margin: 40px 0;
+  margin: 40px 0 0;
 }
 
 .album-check img {
@@ -324,3 +324,67 @@ input:checked + label::after {
   background-color: #305bdf;
 }
 
+@media (max-width: 800px) {
+  form{
+    margin: 0 15%;
+  }
+  .large-input, button {
+    width: 100%;
+  }
+
+  .search button {
+    width: 40%;
+    margin: 10px 30%;
+  }
+
+  .search h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .search section {
+    justify-content: center;
+  }
+
+  section img {
+    width: 100%;
+  }
+
+  .musics-album {
+    max-height: 100%;
+    overflow: initial;
+    width: 347px;
+  }
+  .main_favorito audio {
+    width: 120px;
+  }
+  .main_favorito hr {
+    display: none;
+  }
+
+  .favorite-main {
+    width: 100%;
+    align-items: center;
+  }
+  .main_favorito .music_p {
+    width:90px;
+    margin-right: 2px;
+  }
+
+  .form_perfil {
+    width: 80%;
+    height: 65vh;
+    margin: 5vh 10%;
+    text-align: center;
+  }
+
+  .label_perfil {
+    width: 100%;
+  }
+
+  .loading {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+    }
