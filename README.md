@@ -7,6 +7,8 @@ O app é um player de músicas, assim como o itunes, e utiliza como base a API _
 
 ---
 
+![trybetunes](tunes.gif)
+
 # Habilidades
 
 Nesse projeto foi usado:
